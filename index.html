@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManeCabinetCo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <!-- Header to be used throughout every page on the site -->
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <a href="index.html">Mane Interiors</a>
+            </div>
+
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-text-black">
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="navbar-item has-text-black">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="navbar-item has-text-black">
+                    <a href="contact.html">Contact</a>
+                </div>
+                <!-- <button @click="navigateToContact" style="margin-top: 5%; margin-bottom: 5%;" class="button is-info navbar-item has-text-black"> -->
+                <!--     <a href="contact.html">Contact</a> -->
+                <!-- </button> -->
+            </div>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+
+
+
+    <div class="background-img-container">
+        <!-- <img src="https://imgs.search.brave.com/DGkAlpLbwpTXvzSdz_wGf7Mn4xmimyDjl9AuUDj0pP4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzYz/NGU2M2I4YWRkNzQ0/NmNhMDk3NWMzYS8x/NzE1ODc1OTYzMDkw/LUFUS0pCQVgwS0xH/WDU4VjVVWFE4L2tp/dGNoZW4tZGVzaWdu/LWNhYmluZXRyeS1j/dXN0b20uanBlZw" width="100%" height="100"> -->
+        <h1>{{ hi }}</h1>
+        <p>Hello</p>
+    </div>
+
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="vueapp.js"></script>
+</body>
+
+</html>
