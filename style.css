@@ -1,0 +1,45 @@
+html, body {
+    background-color: #ffffff; /* or any light color */
+    color: #363636; /* Bulma’s default text color */
+    /* margin-left: 8px; */
+    /* margin-top: 8px; */
+}
+
+.is-info {
+    background-color: #30414b;
+}
+
+.is-info a {
+    color: white;
+}
+
+a {
+    color: black;
+}
+
+.background-img-container {
+    background-image: url('https://imgs.search.brave.com/DGkAlpLbwpTXvzSdz_wGf7Mn4xmimyDjl9AuUDj0pP4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzYz/NGU2M2I4YWRkNzQ0/NmNhMDk3NWMzYS8x/NzE1ODc1OTYzMDkw/LUFUS0pCQVgwS0xH/WDU4VjVVWFE4L2tp/dGNoZW4tZGVzaWdu/LWNhYmluZXRyeS1j/dXN0b20uanBlZw');
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-menu .navbar-item {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.navbar-menu.is-active {
+    background-color: white;
+}
+
+.fixed-grid {
+    margin-right: 5%;
+    margin-left: 5%;
+}

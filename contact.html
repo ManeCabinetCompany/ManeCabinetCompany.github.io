@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManeCabinetCo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <a href="index.html">Mane Interiors</a>
+            </div>
+
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-text-black">
+                    <!-- @click="navigateToGallery" -->
+                    <!-- Gallery -->
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="navbar-item has-text-black">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="navbar-item has-text-black">
+                    <a style="border-bottom: 2px solid black" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Welcome to the Contact</h1>
+
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="vueapp.js"></script>
+
+</body>
+
+</html>
