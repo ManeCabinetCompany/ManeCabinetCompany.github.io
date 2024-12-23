@@ -50,5 +50,9 @@ h1 {
         margin-right: 0 !important;
         text-align: left !important; /* Align text properly */
     }
+
+    .hero-body .column {
+        padding-left: 12px !important;
+    }
 }
 
