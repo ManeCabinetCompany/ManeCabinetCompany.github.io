@@ -1,7 +1,20 @@
 Vue.createApp({
     data: function () {
         return {
-            hi: "hey there"
+            hi: "hey there",
+            pics: [
+                "pics/IMG_5677.jpg",
+                "pics/IMG_3523.jpg",
+                "pics/IMG_5677.jpg",
+                "pics/IMG_3523.jpg",
+                "pics/IMG_5677.jpg",
+                "pics/IMG_3523.jpg",
+                "pics/IMG_5677.jpg",
+                "pics/IMG_3523.jpg",
+                "pics/IMG_5677.jpg",
+            ],
+            isModalOpen: false,
+            currentIndex: 0,
         };
     },
     methods: {
@@ -15,8 +28,23 @@ Vue.createApp({
         navigateToContact: function () {
             window.location.href = "contact.html";
         },
+        openModal: function (index) {
+            this.currentIndex = index; // Set the clicked image's index
+            this.isModalOpen = true;
+        },
+        closeModal: function () {
+            this.isModalOpen = false;
+        },
+        nextImage: function () {
+            // Move to the next image; wrap around to the first image if at the end
+            this.currentIndex = (this.currentIndex + 1) % this.pics.length;
+        },
+        prevImage: function () {
+            // Move to the previous image; wrap around to the last image if at the beginning
+            this.currentIndex = (this.currentIndex - 1 + this.pics.length) % this.pics.length;
+        },
     },
-    created: async function () {
+    created: function () {
     },
     mounted() {
         // This will run after the DOM has been rendered

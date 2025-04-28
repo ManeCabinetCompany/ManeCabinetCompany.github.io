@@ -54,5 +54,57 @@ h1 {
     .hero-body .column {
         padding-left: 12px !important;
     }
+
+    .modal-content {
+        max-height: 80vh; /* Shrink modal height to fit smaller screens */
+        padding: 5px; /* Reduce padding to save space */
+    }
 }
 
+
+
+/* Modal container */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 0px;
+    margin: 30px;
+    border-radius: 5px;
+    text-align: center;
+    width: 95%;
+    height: 95%;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: -3px;
+    right: 7px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ed2906;
+}
+
+.prev {
+    font-weight: bold;
+    margin-right: 10rem;
+}
+
+.next {
+    font-weight: bold;
+}
